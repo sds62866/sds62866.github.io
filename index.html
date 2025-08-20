@@ -1,12 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>저는 한주승입니다</title>
+    <title>한주승 - 클라우드 엔지니어</title>
+    <style>
+      /* 기본 스타일 */
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f2f5;
+        color: #333;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header {
+        background-color: #fff;
+        padding: 2em;
+        text-align: center;
+        width: 100%;
+        max-width: 800px;
+        box-sizing: border-box;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin-top: 2em;
+      }
+
+      .profile-pic img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #4a90e2;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        color: #2c3e50;
+        margin-bottom: 0.2em;
+      }
+
+      .tagline {
+        font-size: 1.2em;
+        color: #7f8c8d;
+        margin-top: 0;
+      }
+
+      main {
+        width: 100%;
+        max-width: 800px;
+        margin-top: 2em;
+        padding: 0 2em;
+        box-sizing: border-box;
+      }
+
+      section {
+        background-color: #fff;
+        padding: 2em;
+        margin-bottom: 2em;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        color: #4a90e2;
+        border-bottom: 2px solid #ecf0f1;
+        padding-bottom: 0.5em;
+        margin-top: 0;
+      }
+
+      .skill-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 1em;
+      }
+
+      .skill-item {
+        background-color: #ecf0f1;
+        padding: 8px 12px;
+        border-radius: 5px;
+        font-size: 0.9em;
+        color: #555;
+        font-weight: bold;
+      }
+
+      .learning-note {
+        font-style: italic;
+        color: #888;
+        margin-top: 1em;
+        font-size: 0.9em;
+      }
+
+      .contact-links {
+        display: flex;
+        gap: 15px;
+        margin-top: 1em;
+      }
+
+      .link-btn {
+        background-color: #4a90e2;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+
+      .link-btn:hover {
+        background-color: #357bd9;
+      }
+
+      footer {
+        width: 100%;
+        max-width: 800px;
+        text-align: center;
+        padding: 1em 0;
+        margin-top: 2em;
+        border-top: 1px solid #ddd;
+        color: #888;
+      }
+
+      /* 반응형 디자인 */
+      @media (max-width: 768px) {
+        body {
+          padding: 0 1em;
+        }
+
+        header {
+          padding: 1.5em;
+        }
+
+        h1 {
+          font-size: 2em;
+        }
+
+        .tagline {
+          font-size: 1em;
+        }
+
+        main {
+          padding: 0;
+        }
+
+        .contact-links {
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .link-btn {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>잘 부탁드립니다!</h1>
-    <p>개발을 잘하고 싶습니다</p>
+    <header>
+      <div class="profile-pic">
+        <img src="https://via.placeholder.com/150" alt="한주승 프로필 사진" />
+      </div>
+      <h1>한주승</h1>
+      <p class="tagline">생산적인 코드를 지향하는 클라우드 엔지니어 지망생</p>
+    </header>
+
+    <main>
+      <section class="about">
+        <h2>안녕하세요!</h2>
+        <p>
+          클라우드 엔지니어의 꿈을 키우고 있는 한주승입니다. 기술을 통해 더 나은
+          시스템을 구축하고, 효율적인 솔루션을 만드는 것에 열정을 가지고
+          있습니다. 단순히 작동하는 코드가 아닌, 유지보수와 확장이 용이한
+          '생산적인 코드'를 지향합니다.
+        </p>
+      </section>
+
+      <section class="skills">
+        <h2>관심 기술 스택</h2>
+        <div class="skill-list">
+          <div class="skill-item">Java</div>
+          <div class="skill-item">SQL</div>
+          <div class="skill-item">Spring</div>
+          <div class="skill-item">Docker</div>
+          <div class="skill-item">AWX</div>
+          <div class="skill-item">클라우드 기술 (AWS/Azure)</div>
+        </div>
+        <p class="learning-note">
+          (이 기술들을 배울 예정입니다. 현재는 기초를 다지고 있습니다.)
+        </p>
+      </section>
+
+      <section class="contact">
+        <h2>연락처</h2>
+        <p>더 많은 이야기를 나누고 싶다면 언제든 연락 주세요.</p>
+        <div class="contact-links">
+          <a href="mailto:your-email@example.com" class="link-btn"
+            >이메일 보내기</a
+          >
+          <a href="https://github.com/your-github-profile" class="link-btn"
+            >GitHub 프로필</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 한주승. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>
